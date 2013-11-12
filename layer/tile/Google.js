@@ -66,6 +66,8 @@ L.Google = L.Class.extend({
 
 		map._controlCorners['bottomright'].style.marginBottom = "0em";
 		//this._map.off('moveend', this._update, this);
+				
+		google.maps.event.clearInstanceListeners(this._google);
 	},
 
 	getAttribution: function() {
